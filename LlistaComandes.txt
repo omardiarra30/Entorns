@@ -1,0 +1,44 @@
+Nom: Omar Diarra
+
+Arxiu fet desde la terminal de Git.
+
+Explicacio de tots els pasos fets de la Activity 2(git)
+
+
+Pas 1: Primer de tot creem el Repositori desde la pagina de github.com, el nom del meu repositori es diu Entorns i sera public, un cop creat utilitzarem aquestes comandes:
+	- echo "# Entorns" >> README.md
+	- git init
+	- git add README.md
+	- git commit -m "first commit" (Amb aquesta comanda fem un commit)
+	- git branch -M main
+	- git remote add origin https://github.com/omardiarra30/Entorns.git
+	- git push -u origin main (fem que el contingut del repositori local es pasi al repositori remot)
+
+Un cop fet aixo ja tindriem el nostre repositori fet amb el contingut a dins.
+
+--------------------------------
+
+Pas 2: Crearem el branch que es dira activity2_git i penjarem un arxiu dins d'aquest branch que es dira name_number.txt, ho farem amb aquestes comandes:
+	
+	- git branch activity2_git (creem el branch)
+	- git checkout activity2_git (ens canviem de ruta i ens posem dins del branch que hem creat)
+	- nano name_number.txt ( creem l'arxiu i posem la data i la hora)
+	- git add .
+	- git commit -m "Branch Creat" (fem un commit de que hem creat el branch amb l'arxiu dins)
+	- git push -u origin activity2_git (fem que el contingut del branch que hem creat es pugi amb l'arxiu dins)
+
+--------------------------------
+
+Pas 3 i ultim: Afegirem un nou arxiu que es dira name_differentnumber.txt i borrarem el que haviem creat anteriorment i per ultim farem un update del repositori. Farem tots aquests pasos amb aquestes comandes:
+
+	- nano name_differentnumber.txt (creem el nou arxiu)
+	- rm name_number.txt (borrem el primer arxiu)
+	- git add .
+	- git status (faig un git status per comprovar que tot estigui correcte)
+	- git commit -m "Primer arxiu borrat i segon creat" (fem un nou commit)
+	- git push -u origin activity2_git (apliquem que es facin els canvis del branch)
+	- git push origin main (actualitzem tot el repositori)
+
+---------------------------------
+
+Aquets son els pasos necsesaris per fer la Activitat 2
